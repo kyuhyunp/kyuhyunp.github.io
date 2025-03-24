@@ -14,6 +14,60 @@
 
 ## Github guide
 
+### How to initialize git after the set up
+- Create a new branch and move to the new branch
+  ```
+  git branch <branch name>
+  git checkout <branch name>
+  ```
+
+- Check that you are in the new branch
+  ```
+  git branch
+  ```
+  
+- Delete the "main branch" on github
+  ```
+  git branch -d <main branch name>
+  ```
+
+### How to use .gitignore to exclude files to push
+- Create .gitignore if you haven't done so
+  ```
+  touch .gitignore
+  ```
+
+- Edit .gitignore using vi
+  ```
+  vi .gitignore
+  ```
+
+### How to create a pull request
+- Pull all the changes
+  ```
+  git fetch origin
+  git merge origin/<main branch name>
+  ```
+  
+- Add all files to push and check
+  ```
+  git add <file name> 
+  git status
+  ```
+  
+- Commit and push the changes (Might have to visit github to get the [password](https://stackoverflow.com/questions/68775869/message-support-for-password-authentication-was-removed))
+  ```
+  git commit -m <commit message>
+  git push
+  ```
+
+- Go to github repo to make the pull request
+
+### How to write a pull request
+- Make sure to add all the tests you have done
+- Include descriptions to share knowledge
+
+
 ### How to view the pull request and the tests within it
 1. Go to the commit
 
