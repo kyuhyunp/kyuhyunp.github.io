@@ -1,6 +1,6 @@
 # kyuhyunp.github.io
 
-## Rules
+## Best Practices
 ### Minimize context switching
 - Send less messages back and forth
 - Work on detailed requirement before coding
