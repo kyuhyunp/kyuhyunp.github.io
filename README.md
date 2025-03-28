@@ -76,3 +76,19 @@
 2. Click on the number
 
 ![image](https://github.com/user-attachments/assets/1c2f53da-ff1f-4527-ab80-ed6822228b0a)
+
+### How to remove files from github without deleting from your local file system
+- For deleting a file
+```
+git rm --cached file_to_remove.txt 
+```
+- For deleting a folder
+```
+git rm --cached -r directory_to_remove
+```
+- Make sure to add files to .gitignore
+- Commit and push
+```
+git commit -m "<commit message>"
+git push
+```
