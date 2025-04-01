@@ -12,6 +12,23 @@
 
 ### Don't approve the code if you are not confident with it
 
+## Terminal guide
+### What is `$PATH`
+`$PATH` is a environment variable that is file location-related. 
+For instance, when you run `make` the terminal looks for `make` in `$PATH`
+
+### Checking `$PATH`
+```
+echo $PATH
+```
+
+### Adding to `$PATH`
+```
+export PATH=$PATH:<pathname>
+```
+
+
+
 ## Github guide
 
 ### How to initialize git after the set up
@@ -92,3 +109,8 @@ git rm --cached -r directory_to_remove
 git commit -m "<commit message>"
 git push
 ```
+
+### What if .git folder is created in the wrong location
+- Move the folder to the correct location
+- Run `git rm --cache <filename>` to correct the names
+
