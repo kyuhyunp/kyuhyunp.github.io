@@ -26,6 +26,7 @@ echo $PATH
 ```
 export PATH=$PATH:<pathname>
 ```
+Current path is connected with a new pathname using :
 
 
 
