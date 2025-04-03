@@ -115,3 +115,14 @@ git push
 - Move the folder to the correct location
 - Run `git rm --cache <filename>` to correct the names
 
+### How to add or remove multiple files
+To stage your whole working tree:
+```
+$ git add -u :/
+```
+
+To stage just the current path:
+```
+$ git add -u .
+```
+
