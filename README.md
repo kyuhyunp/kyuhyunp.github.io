@@ -125,4 +125,13 @@ To stage just the current path:
 ```
 $ git add -u .
 ```
+### git pull
+`git pull` is a high-level command that combines two other commands: git fetch and git merge.
 
+`git fetch` downloads all the new commits and branch information from the remote repository.
+
+`git merge` is a core operation for combining divergent lines of development. You explicitly tell it which branch to merge into your current one.
+
+```
+git merge origin/main
+```
