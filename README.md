@@ -135,3 +135,16 @@ $ git add -u .
 ```
 git merge origin/main
 ```
+
+### Finding the executable
+`ls -R build | grep -i <ProjectName>`
+
+### Checking ownership 
+`ls -l`
+
+### Changing ownership
+`sudo chown newuser filename.txt`
+
+
+
+
