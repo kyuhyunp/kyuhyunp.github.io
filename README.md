@@ -160,8 +160,13 @@ Git reset
 - rewrites history
 - can be destructive
 
+For a standard two-branch merge, the parents are:
+
+Parent 1: The commit on the branch you were on when you ran git merge. This is almost always the mainline you want to preserve.
+
+Parent 2: The commit from the branch that you merged in.
 ```
-git revert <commit_hash>
+git revert -m 1 <commit_hash>
 ```
 
 
