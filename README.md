@@ -28,6 +28,14 @@ export PATH=$PATH:<pathname>
 ```
 Current path is connected with a new pathname using :
 
+### Finding the executable
+`ls -R build | grep -i <ProjectName>`
+
+### Checking ownership 
+`ls -l`
+
+### Changing ownership
+`sudo chown newuser filename.txt`
 
 
 ## Github guide
@@ -114,6 +122,13 @@ git push
 ### What if .git folder is created in the wrong location
 - Move the folder to the correct location
 - Run `git rm --cache <filename>` to correct the names
+Git revert
+- undo commit by creating a new commit
+- preserves history
+
+Git reset
+- rewrites history
+- can be destructive
 
 ### How to add or remove multiple files
 To stage your whole working tree:
@@ -136,14 +151,21 @@ $ git add -u .
 git merge origin/main
 ```
 
-### Finding the executable
-`ls -R build | grep -i <ProjectName>`
+### How to undo a commit
+Git revert
+- undo commit by creating a new commit
+- preserves history
 
-### Checking ownership 
-`ls -l`
+Git reset
+- rewrites history
+- can be destructive
 
-### Changing ownership
-`sudo chown newuser filename.txt`
+```
+git revert <commit_hash>
+```
+
+
+
 
 
 
